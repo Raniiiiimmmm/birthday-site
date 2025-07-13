@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <title>Happy Birthday</title>
+</head>
+<body>
+    <fieldset>
+    <div class="container">
+        <div>
+            <h1 class="title">Happy Birthday Bestie &hearts;</h1>
+        </div>
+        <div class="gif">
+            <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExMG5lZHM3aXdlcjdka2FpN3MyOTI1MmtwMmF5NmM2NzYycmR2d2dtZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/6WFScxN6fi95z3YVQD/giphy.gif" alt="cute animated cat" class="gb">
+            </div>
+            <div class="btn" >
+                <button class="bt1" id="gyp" onclick="nextpage1()">Get your Present</button>
+                <button class="bt2" id="has" onclick="nextpage2()">Hear a Song</button> </div>
+    </div>
+                <script>
+                    function nextpage1(){
+                        confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+                        setTimeout(() => {
+                        window.location.href="gyp.html?confetti=true";
+                         }, 1000);
+  }
+                    function nextpage2(){
+                         confetti({ particleCount: 100, spread: 70, origin: { y: 0.6 } });
+                        setTimeout(() => {
+                        window.location.href="has.html?confetti=true";
+                         }, 1000);
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</fieldset>
+</body>
+</html>
